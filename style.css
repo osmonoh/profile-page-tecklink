@@ -22,6 +22,7 @@ a {
 
 .navbar-wrap {
   background-color: #f0f0f0;
+  /* background-color: rgba(38, 169, 225, 0.118); */
 }
 
 .navbar {
@@ -80,7 +81,9 @@ a {
   border-radius: 8px;
   padding: 0.6rem 1.8rem;
   background-color: #f0f0f0;
+  /* background-color: #26a9e1; */
   color: grey;
+  /* color: white; */
   font-weight: 700;
   cursor: pointer;
 }
@@ -106,6 +109,10 @@ a {
 
 .aside-details {
   margin-bottom: 3.6rem;
+}
+
+.aside-top-mobile {
+  display: none;
 }
 
 .avatar {
@@ -448,15 +455,39 @@ a {
     gap: 0.6rem;
   }
 
+  .avatar-group {
+    display: flex;
+    gap: 2rem;
+  }
+
   .avatar-text {
     margin-bottom: 0;
+  }
+
+  .aside-top {
+    display: none;
+  }
+
+  .aside-top-mobile {
+    display: block;
   }
 
   .main-section {
     width: 100%;
   }
 
+  .main-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-card {
+    width: 100%;
+  }
+
   .menu-buttons {
+    margin-bottom: 2.4rem;
     justify-content: center;
     gap: 0.6rem;
   }
@@ -498,6 +529,14 @@ a {
 
   .btn-menu {
     font-size: 1.2rem;
+  }
+
+  .avatar-group {
+    flex-direction: column;
+  }
+
+  .avatar {
+    margin-bottom: 0;
   }
 
   .main-card {
