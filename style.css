@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-/* HEADER  */
+/* ------------- HEADER ---------------------  */
 
 .navbar-wrap {
   background-color: #f0f0f0;
@@ -38,6 +38,7 @@ a {
 }
 
 .navbar-logo img {
+  display: block;
   width: 100%;
 }
 
@@ -84,7 +85,7 @@ a {
   cursor: pointer;
 }
 
-/* MAIN  */
+/* -------------- MAIN --------------  */
 
 .main {
   max-width: 1200px;
@@ -96,6 +97,8 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+/* ASIDE  */
 
 .aside-left {
   width: 25%;
@@ -200,6 +203,8 @@ a {
   margin: 0 auto;
   border-bottom: 1px solid #c4c4c4;
 }
+
+/* MAIN SECTION  */
 
 .main-section {
   width: 70%;
@@ -380,6 +385,8 @@ a {
   margin-bottom: 6rem;
 }
 
+/* MAP  */
+
 .map {
   box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.4);
   border-radius: 8px;
@@ -390,4 +397,115 @@ a {
   display: block;
   width: 100%;
   height: 280px;
+}
+
+/* @@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@  */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-logo {
+    width: 5rem;
+  }
+
+  .navbar p {
+    display: none;
+  }
+
+  .navbar-middle {
+    gap: 0;
+  }
+
+  .navbar-middle-link,
+  .navbar-profile {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-form {
+    padding: 1.6rem 0;
+  }
+
+  .main-top-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-left {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .avatar-text {
+    margin-bottom: 0;
+  }
+
+  .main-section {
+    width: 100%;
+  }
+
+  .menu-buttons {
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .btn-menu {
+    padding: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .btn-menu span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    width: 4rem;
+  }
+
+  .navbar-middle-link,
+  .navbar-profile {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .main {
+    padding: 1.6rem;
+  }
+
+  .main-section-heading {
+    margin-bottom: 3.2rem;
+  }
+
+  .menu-buttons {
+    gap: 0.2rem;
+  }
+
+  .btn-menu {
+    font-size: 1.2rem;
+  }
+
+  .main-card {
+    margin-bottom: 3.2rem;
+    padding: 2.4rem;
+  }
+
+  .card-topic {
+    margin-bottom: 4rem;
+  }
 }
